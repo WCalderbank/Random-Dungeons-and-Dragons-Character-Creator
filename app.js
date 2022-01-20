@@ -1,3 +1,12 @@
+async function languageInfo() {
+  const response = await fetch("https://www.dnd5eapi.co/api/languages");
+  const data = await response.json();
+  console.log(data);
+  const num = Math.floor(Math.random() * 16);
+  console.log(num);
+  let p5 = document.querySelector("#p5");
+  p5.innerHTML = `${data.results[num].name}`;
+}
 async function weaponInfo() {
   const response = await fetch(
     "https://www.dnd5eapi.co/api/equipment-categories/weapon/"
@@ -47,6 +56,7 @@ let raceTitle = document.querySelector("#race");
 let classTitle = document.querySelector("#role");
 let alignmentTitle = document.querySelector("#alignment");
 let weaponTitle = document.querySelector("#weapon");
+let languageTitle = document.querySelector("#language");
 
 function redGlow() {
   titleColor.style.color = "firebrick";
@@ -55,6 +65,7 @@ function redGlow() {
   classTitle.style.color = "firebrick";
   alignmentTitle.style.color = "firebrick";
   weaponTitle.style.color = "firebrick";
+  languageTitle.style.color = "firebrick";
 }
 
 colorChange.addEventListener("mouseenter", redGlow);
@@ -66,6 +77,7 @@ function returnOriginal() {
   classTitle.style.color = "black";
   alignmentTitle.style.color = "black";
   weaponTitle.style.color = "black";
+  languageTitle.style.color = "black";
 }
 
 colorChange.addEventListener("mouseleave", returnOriginal);
@@ -77,10 +89,12 @@ function wordShine() {
   let p2 = document.querySelector("#p2");
   let p3 = document.querySelector("#p3");
   let p4 = document.querySelector("#p4");
+  let p5 = document.querySelector("#p5");
   p1.style.color = "#" + `${randomColor}`;
   p2.style.color = "#" + `${randomColor}`;
   p3.style.color = "#" + `${randomColor}`;
   p4.style.color = "#" + `${randomColor}`;
+  p5.style.color = "#" + `${randomColor}`;
 }
 
 let Button = document.querySelector("#fact-button");
@@ -93,3 +107,4 @@ adventureInfo();
 alignmentInfo();
 weaponInfo();
 wordShine();
+newInfo();
