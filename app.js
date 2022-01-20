@@ -4,7 +4,7 @@ async function weaponInfo() {
   );
   const data = await response.json();
   console.log(data);
-  const num = Math.floor(Math.random() * 36);
+  const num = Math.floor(Math.random() * 35);
   console.log(num);
   let p4 = document.querySelector("#p4");
   p4.innerHTML = `${data.equipment[num].name}`;
