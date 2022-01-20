@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dungeons and Dragons CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <h1 id="title" class="h1">LET THE ADVENTURE BEGIN!</h1>
+        <div class="navigation-links" id="navigation-links">
+          <ul id="links">
+            <li><a href=""> RACES </a></li>
+            <li><a href=""> CLASSES</a></li>
+            <li><a href=""> MONSTERS</a></li>
+            <li><a href=""> INVENTORY</a></li>
+            <li><a href=""> ADVENTURES</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="circle">
+        <div class="dice" id="dice">
+          <img src="images/20-sided-dice-icon-10 (1).jpg" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="info-col">
+          <h5 id="race">RACE</h5>
+          <p class="p1" id="p1">?</p>
+        </div>
+
+        <div class="info-col">
+          <h5 id="alignment">ALIGNMENT</h5>
+          <p class="p2" id="p2">?</p>
+        </div>
+
+        <div class="info-col">
+          <h5 id="role">CLASS</h5>
+          <p class="p3" id="p3">?</p>
+        </div>
+
+        <div class="info-col">
+          <h5 id="weapon">FAVOURED WEAPON</h5>
+          <p class="p4" id="p4">?</p>
+        </div>
+      </div>
+      <button
+        onclick="classInfo(), adventureInfo(), alignmentInfo(), weaponInfo(), wordShine()"
+        class="fact-button"
+      >
+        Why Don't We Find Out?
+      </button>
+      <h2 id="fate">What Does FATE have in store for you?</h2>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
