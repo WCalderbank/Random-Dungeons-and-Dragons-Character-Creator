@@ -107,4 +107,4 @@ adventureInfo();
 alignmentInfo();
 weaponInfo();
 wordShine();
-newInfo();
+languageInfo();
