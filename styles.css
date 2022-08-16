@@ -93,7 +93,7 @@ nav {
   transform: rotate(360deg) scale(1);
 }
 
-.dice {
+.d20 {
   object-fit: cover;
   position: absolute;
 }

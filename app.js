@@ -49,7 +49,7 @@ async function adventureInfo() {
   p1.innerHTML = `${data.results[num].name}`;
 }
 
-let colorChange = document.querySelector("#dice");
+let colorChange = document.querySelector("#d20");
 let titleColor = document.querySelector("#title");
 let fateQuote = document.querySelector("#fate");
 let raceTitle = document.querySelector("#race");
